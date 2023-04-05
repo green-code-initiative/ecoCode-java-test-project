@@ -1,11 +1,13 @@
-package fr.greencodeinitiative.java.checks.forcelazyfetchtypeuse;
+package fr.greencodeinitiative.java.checks.forcelazyfetchtypeuse.use;
+
+import fr.greencodeinitiative.java.checks.forcelazyfetchtypeuse.LazyItem;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
 @Table(name = "ORDER")
-public class Order implements Serializable {
+public class OrderUse implements Serializable {
     @Id
     @GeneratedValue
     @Column(name = "ORDER_ID")
@@ -13,5 +15,5 @@ public class Order implements Serializable {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id")
-    private LazyItem item;
+    private LazyItem items;
 }

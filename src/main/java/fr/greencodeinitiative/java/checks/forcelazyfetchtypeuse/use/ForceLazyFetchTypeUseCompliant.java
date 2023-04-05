@@ -1,5 +1,7 @@
-package fr.greencodeinitiative.java.checks.forcelazyfetchtypeuse;
+package fr.greencodeinitiative.java.checks.forcelazyfetchtypeuse.use;
 
+
+import fr.greencodeinitiative.java.checks.forcelazyfetchtypeuse.LazyItem;
 
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -12,5 +14,5 @@ import java.util.Set;
 @Table(name = "COMPLIANT")
 public class ForceLazyFetchTypeUseCompliant extends LazyItem {
     @OneToMany(mappedBy = "item", fetch = FetchType.LAZY)
-    private Set<Order> orders = new HashSet<>();
+    private Set<OrderUse> orderUses = new HashSet<>();
 }

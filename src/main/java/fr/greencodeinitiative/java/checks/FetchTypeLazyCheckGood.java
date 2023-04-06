@@ -1,11 +1,13 @@
 package fr.greencodeinitiative.java.checks;
 
-
 import fr.greencodeinitiative.java.utils.User;
 import jakarta.persistence.*;
 
 @Entity
-class FetchTypeLazyCheck {
+@Table(name = "ECO_CODE")
+class FetchTypeLazyCheckGood {
+
+
     @Id
     @GeneratedValue
     @Column(name = "ORDER_ID")

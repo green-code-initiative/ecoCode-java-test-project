@@ -2,12 +2,12 @@ package fr.greencodeinitiative.java.checks;
 
 
 
+import fr.greencodeinitiative.java.utils.User;
 import jakarta.persistence.*;
 import org.hibernate.annotations.Table;
 
 import java.util.regex.Pattern;
 @Entity
-@Table(name = "ECO_CODE")
 class FetchTypeLazyCheck {
     FetchTypeLazyCheck(FetchTypeLazyCheck mc) {
     }
@@ -19,6 +19,6 @@ class FetchTypeLazyCheck {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="USER_ID")
-    private Object user;
+    private User user;
    
 }

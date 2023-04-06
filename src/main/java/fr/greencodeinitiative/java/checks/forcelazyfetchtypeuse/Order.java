@@ -6,6 +6,9 @@ import java.io.Serializable;
 @Entity
 @Table(name = "ORDER")
 public class Order implements Serializable {
+    /**
+     * Order class to simulate ORM actions
+     */
     @Id
     @GeneratedValue
     @Column(name = "ORDER_ID")

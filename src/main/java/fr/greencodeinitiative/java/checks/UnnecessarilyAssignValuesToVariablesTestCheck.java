@@ -75,4 +75,13 @@ class UnnecessarilyAssignValuesToVariablesTestCheck {
     public void testCompliantThrow() throws Exception {
         throw new Exception("dummy");
 	}
+
+    public void testCompliantCatchException() {
+        try {
+            int i = 1;
+            System.out.println(i);
+        } catch (Exception e) {
+            System.out.println("Something went wrong.");
+        }
+    }
 }

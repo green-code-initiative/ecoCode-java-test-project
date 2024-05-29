@@ -45,4 +45,10 @@ class IncrementCheck {
             System.out.println(i);
         }
     }
+
+    // Compliant because maybe foo51 needs the incremented value
+    void foo6(int value) {
+        int i = 0;
+        foo51(i++);
+    }
 }

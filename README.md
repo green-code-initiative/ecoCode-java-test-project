@@ -11,7 +11,7 @@ To do this :
 Step 1 : prepare local environment
 ---
 
-To launch local environment : please follow https://github.com/green-code-initiative/ecoCode/blob/main/INSTALL.md
+To launch local environment : please follow https://github.com/green-code-initiative/creedengo-rules-specifications/blob/main/INSTALL.md
 (especially SonarQube configuration part and get generated private token)
 
 Step 2 : compile and build
